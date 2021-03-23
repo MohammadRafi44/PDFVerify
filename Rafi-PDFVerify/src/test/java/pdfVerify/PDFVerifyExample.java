@@ -1,5 +1,6 @@
 package pdfVerify;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.testng.annotations.Test;
@@ -31,15 +32,19 @@ public class PDFVerifyExample {
 					PDFVerify.VerifyImage(<file path>, <base image path>)
 		*/
 		
+		
 //		--need to resolve this Throwing some IO exception 
-//		PDFVerify.VerifyOnlinePDFContent("https:\\home.cs.colorado.edu\\~kena\\classes\\5828\\s12\\lectures\\05-introtesting.pdf", "Testing");
+		PDFVerify.VerifyOnlinePDFContent("https:\\home.cs.colorado.edu\\~kena\\classes\\5828\\s12\\lectures\\05-introtesting.pdf", "Testing");
 
 		//		--works fine 
-		PDFVerify.VerifyTextLocalPDF("C:\\Users\\mohammad.shaikh\\Documents\\Mohammad Rafi Shaik-CV.pdf", "Certified");
-
+//		PDFVerify.VerifyTextLocalPDF("C:\\Users\\mohammad.shaikh\\Documents\\Mohammad Rafi Shaik-CV.pdf", "Certified");
+				
 		//- need to resolve
 		//		Call the following methods to verify image
-		PDFVerify.VerifyImage("C:\\Users\\mohammad.shaikh\\Documents\\Mohammad Rafi Shaik-CV.pdf","C:\\Users\\mohammad.shaikh\\Documents\\ImageForPDFVerify.png", null);
+//		final File f = new File("C:\\Users\\mohammad.shaikh\\Documents\\ImageForPDFVerify.png");
+//		final File f = new File("C:\\Users\\mohammad.shaikh\\Documents\\FailPDFVerfiy.png");
+		
+//		PDFVerify.VerifyImage("C:\\Users\\mohammad.shaikh\\Documents\\Mohammad Rafi Shaik-CV.pdf",f, "Fail");
 //		PDFVerify.VerifyImagePDFImageOnline(null, null, null);
 	}
 	
